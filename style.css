@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: url(./1024px-Node.js_logo.svg.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+
+    
+}
+
+.sidemenu{
+    width: 0px;
+    height: 100vh;
+    background-color: coral;
+    position: fixed;
+    top: 50px;
+    left: 0px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+.restmenu{
+    height: 100vh;
+    width: 0vw;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    overflow: hidden;
+    top: 50px;
+    right: 0px;
+    z-index: 1;
+}
+
+.restmenu a{
+    position: relative;
+    top: -5px;
+    left: 5px;
+    font-size: 30px;
+    color: white;
+}
+.sidemenu ul li{
+    list-style: none;
+    margin: 20px;
+}
+
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.header ul {
+    display: flex;
+    list-style: none;
+    max-height: 50px;
+    background-color: cadetblue;
+}
+
+.header li{
+    margin: 10px;
+}
+
+.header li span{
+    position: relative;
+    top: -4px;
+}
