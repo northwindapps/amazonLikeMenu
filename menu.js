@@ -1,9 +1,10 @@
 function openNav() {
-    document.getElementsByClassName("sidemenu")[0].style.width = "20vw";
-    document.getElementsByClassName("restmenu")[0].style.width = "80vw";
+  
+    document.querySelector('.sidemenu').classList.add('slide-in');
+    document.querySelector('.restmenu').classList.add('slide-in');
   }
   
   function closeNav() {
-    document.getElementsByClassName("sidemenu")[0].style.width = "0";
-    document.getElementsByClassName("restmenu")[0].style.width = "0";
+    document.querySelector('.sidemenu').classList.remove('slide-in');
+    document.querySelector('.restmenu').classList.remove('slide-in');
   }

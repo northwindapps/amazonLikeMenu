@@ -16,26 +16,38 @@
 }
 
 .sidemenu{
-    width: 0px;
+    width: 20vw;
     height: 100vh;
     background-color: coral;
-    position: fixed;
+    position: absolute;
     top: 50px;
-    left: 0px;
+    left: -20vw;
     overflow: hidden;
     z-index: 1;
+}
+
+.sidemenu.slide-in{
+    left: 0px;
+    transform: translateX(0px);
+    transition: all .1s cubic-bezier(0,1,.3,1);
 }
 
 
 .restmenu{
     height: 100vh;
-    width: 0vw;
+    width: 80vw;
     background-color: rgba(0,0,0,0.5);
-    position: fixed;
+    position: absolute;
     overflow: hidden;
     top: 50px;
-    right: 0px;
+    right: -80vw;
     z-index: 1;
+}
+
+.restmenu.slide-in{
+    right: 0;
+    transform: translateX(0px);
+    transition: all .1s cubic-bezier(0,1,.3,1);
 }
 
 .restmenu a{
